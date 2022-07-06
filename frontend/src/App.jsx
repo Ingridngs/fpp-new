@@ -21,8 +21,9 @@ export const App = () => {
     
   return (
     <>
+     
      <BrowserRouter>
-        <div   className="pages">
+          <SideBar/>
           <Routes> 
                     <Route 
                       exact path='/login'  
@@ -37,11 +38,9 @@ export const App = () => {
                       exact path='/newemployee'  
                       element={<AddEmployee/>} />  
                          <Route 
-                      exact  path='/displayev'  
+                      exact  path='/ev'  
                       element={<DisplayEvaluacion/>} />  
-                     
             </Routes>
-        </div>
     </BrowserRouter>
     </>
   )

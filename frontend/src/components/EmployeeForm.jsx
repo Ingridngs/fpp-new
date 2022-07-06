@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useEmployeesContext } from '../hooks/useEmployeesContext'
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Form } from "react-bootstrap";
 
 export const EmployeeForm = () => {
      const { dispatch } = useEmployeesContext();
@@ -58,7 +60,7 @@ export const EmployeeForm = () => {
     
 
   return (
-      <div  className=' form-group container  px-4 '>
+      <div  className=' container form-group   px-4 '>
             <form className="create"   onSubmit={ handleSubmit }>
                 <div className="form-row">
                     <div className="col-md-6 b-5  mt-5  __in">
@@ -102,25 +104,28 @@ export const EmployeeForm = () => {
                                 />
                   </div>
                      <div className="col-md-6 b-5  mt-5  __in">
-                          <label>Nivel</label>
-                                <input 
-                                type="text"
-                                onChange={ e => setLevel(e.target.value) }  
-                                value={ level }  
-                                className='form-control'  
-                                placeholder='Nivel'
-                                />
-                     </div>
-                   <div className="col-md-6 b-5  mt-5  __in">
-                       <label>Area</label>
-                                <input 
-                                type="text"
-                                onChange={ e => setArea(e.target.value) }  
-                                value={ area }  
-                                className='form-control'  
-                                placeholder='Area'
-                                />
-                   </div>
+                    <label>Nivel</label>
+                     <Form.Select value={level} onChange={(e) => setLevel(e.target.value)} className='form-control' placeholder='Nivel' >
+                            <option>Nivel </option>
+                            <option value="Directivo">Directivo</option>
+                            <option value="Estratégico">Estratégico</option>
+                            <option value="Táctico">Táctico</option>
+                            <option value="Operativo">Operativo</option>
+                            <option value="Supervisión">Supervisión</option>
+                     </Form.Select>
+                       </div>
+                    <div className="col-md-6 b-5  mt-5  __in">
+                    <label>Area</label>
+                     <Form.Select value={area} onChange={(e) => setArea(e.target.value)} className='form-control' placeholder='Area' >
+                            <option>Area</option>
+                            <option value="Administración y Finanzas">Administración  y Finanzas</option>
+                            <option value="Bienestar Laboral">Bienestar Laboral</option>
+                            <option value="Comunicación">Comunicación</option>
+                            <option value="Desarrollo Comunitario">Desarrollo Comunitario</option>
+                            <option value="Desarrollo Institucional">Desarrollo Institucional</option>
+                            <option value="Monitoreo y Evaluación">Monitoreo y evaluación</option>
+                     </Form.Select>
+                       </div>
                     <div className="col-md-6 b-5  mt-5  __in">
                         <label>Oficina</label>
                                 <input 

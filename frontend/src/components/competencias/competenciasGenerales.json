@@ -1,0 +1,46 @@
+[{
+        "id": 1,
+        "competencia": "Confiable ",
+        "definicion": " Dice lo que piensa con honestidad cuidando al otro. Hace lo que dice alineado a lineamientos, procesos y principios organizacionales. ",
+        "preguntas": {
+            "one": "La persona habla con la verdad.",
+            "two": "La persona cumple los acuerdos en tiempo y forma. ",
+            "three": "Considero que la persona se comporta según lineamiento de comportamiento."
+        },
+        "ejemplos": {
+            "uno": "  La persona comparte los hechos de las situaciones tal y cómo pasaron, son comprobables.  ",
+            "dos": "La persona realiza las actividades/tareas/objetivos con las que se compromete y son su responsabilidad. ",
+            "tres": "La persona sigue el código de conducta, protección de datos personales, protección civil y otras leyes procesos de FPP. "
+        }
+    },
+    {
+        "id": 2,
+        "competencia": "Da resultados ",
+        "definicion": "Hace que las cosas sucedan según su responsabilidad organizacional en tiempo y forma.",
+        "preguntas": {
+            "one": "La persona mantiene el foco en los objetivos y metas a alcanzar. ",
+            "two": "La persona aprende de sus errores. ",
+            "three": "La persona hace que las cosas sucedan. "
+        },
+        "ejemplos": {
+            "one": "La persona recuerda al equipo sobre objetivos y metas.",
+            "two": "La persona reconoce sus errores, realiza acciones para solucionarlos y esto se ve reflejado en comportamientos futuros.  ",
+            "three": "La persona realiza todas las acciones necesarias para cumplir con actividades/objetivos/metas. Sin excusas, ni justificaciones para no cumplir. "
+        }
+    },
+    {
+        "id": 3,
+        "competencia": "Busca excelencia ",
+        "definicion": " Se desarrolla personal y profesionalmente de forma constante para lograr resultados tangibles y sostenibles en la organización a largo plazo.",
+        "preguntas": {
+            "one": "La persona está constantemente aprendiendo y lo aplica.",
+            "two": "La persona pide y escucha retroalimentación.",
+            "three": "La persona tiene apertura al cambio.  "
+        },
+        "ejemplos": {
+            "one": "La persona se actualiza constantemente, se ve reflejado en su trabajo y lo puede compartir con los demás. ",
+            "two": "La persona pregunta a sus compañeros y/o líder inmediato sobre su desempeño durante todo el año, aplica los comentarios relevantes.",
+            "three": "La persona se adapta, apoya a otros y participa en la implementación/desarrollo de nuevas tecnologías/procesos/cambios organizacionales. "
+        }
+    }
+]

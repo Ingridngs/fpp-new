@@ -7,6 +7,7 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
   import TabContent from 'react-bootstrap/TabContent'
   import TabPane from 'react-bootstrap/TabPane'
+import { DropDownAswer } from './competencias/DropDownAswer';
 
 
 
@@ -90,21 +91,8 @@ const DisplayEvaluacion = () => {
             <div
             className={toggleState === 3 ? "content  active-content" : "content"}
             >
-            <div>
-                <h3>Confiable </h3>
-            <hr />
-            <p>
-                Dice lo que piensa con honestidad cuidando al otro. Hace lo que dice alineado a lineamientos, procesos y principios organizacionales. 
-            </p>
-            <div>
-                1- La persona habla con la verdad. 
+            <EvCompetenciasDirectivo/>
             </div>
-            
-            </div>
-            
-
-            </div>
-            
         </div>
         </div>
     </>

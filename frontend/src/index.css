@@ -13,13 +13,13 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.changeColor {
-    color: #d41d75;
-}
-
 .container {
     margin-left: 18%;
     margin-top: 2%;
+}
+
+.changeColor {
+    color: #d41d75;
 }
 
 .btn-background {

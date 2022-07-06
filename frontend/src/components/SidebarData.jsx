@@ -18,20 +18,20 @@ export const SidebarData = [
   },
   {
     title: 'Evaluación',
-    path: '/ev',
+    path: '',
     icon: <GiIcons.GiNotebook/>,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: 'Competencias',
-        path: '/evaluacion',
+        title: 'Competencias Organizacionales',
+        path: '/ev',
         icon: <IoIcons.IoIosPaper />
       },
       {
-        title: '360',
-        path: '/ev/360',
+        title: 'Competencias Técnicas',
+        path: '/evt',
         icon: <IoIcons.IoIosPaper />
       }
     ]
@@ -45,7 +45,7 @@ export const SidebarData = [
   },
   {
     title: 'Equipo',
-    path: '/team',
+    path: '/newemployee',
     icon: <IoIcons.IoMdPeople />
   },
   {

@@ -9,6 +9,7 @@ import logo from '../img/logo.jpeg';
 import { Login } from './Login';
 
 
+
 const Nav = styled.div`
   background: #ffffff;
   height: 70px;
@@ -59,14 +60,16 @@ const SideBar = () => {
     >
         <Nav>
           <Login/>
-          <NavIcon to='/addemployee'>
+          <NavIcon to='/newemployee'>
             <FaIcons.FaUserPlus/>
           </NavIcon> 
           <button    type='submit' className='btn btn-primary btn-background '>Salir</button> 
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-             <img   className='__logo_main' src={ logo } alt='fondo para la paz logo'/>
+            <Link to="/about">
+               <img   className='__logo_main' src={ logo } alt='fondo para la paz logo'/>
+            </Link>
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;
             })}
