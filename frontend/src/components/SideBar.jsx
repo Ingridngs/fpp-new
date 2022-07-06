@@ -5,7 +5,7 @@ import * as FaIcons from 'react-icons/fa';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
-import logo from '../img/logo.jpeg';
+import logo from '../img/logo.jpg';
 import { Login } from './Login';
 
 
@@ -63,7 +63,7 @@ const SideBar = () => {
           <NavIcon to='/newemployee'>
             <FaIcons.FaUserPlus/>
           </NavIcon> 
-          <button    type='submit' className='btn btn-primary btn-background '>Salir</button> 
+          <button    type='submit' className='new-theme   '>Salir</button> 
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

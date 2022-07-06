@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -13,28 +14,35 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.container {
-    margin-left: 18%;
+.main {
+    margin-left: 19%;
     margin-top: 2%;
+    font-size: 15px;
 }
 
 .changeColor {
     color: #d41d75;
 }
 
-.btn-background {
+.new-theme {
     background-color: #d41d75;
-    height: 40px;
-    width: 60px;
+    border-radius: 5px;
+    height: 45px;
+    width: 80px;
     border: #d41d75;
-}
-
-.btn-background:hover {
-    background-color: #83c75e;
-}
-
-.btn-background {
+    color: #f1f1f1;
+    font-size: 11px;
+    border: none;
     margin-right: 1%;
+}
+
+.new-theme:hover {
+    background-color: #FE5000;
+}
+
+#btn-form {
+    margin-top: 5px;
+    margin-left: 90%;
 }
 
 .__in {
@@ -67,10 +75,11 @@ code {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 500px;
-    height: 400px;
+    width: 71%;
+    height: 100%;
     background: #f1f1f1;
-    margin: 100px auto 0;
+    margin-left: 23%;
+    margin-top: 5%;
     word-break: break-all;
     border: 1px solid rgba(0, 0, 0, 0.274);
 }
@@ -83,12 +92,16 @@ code {
     padding: 15px;
     text-align: center;
     width: 50%;
-    background: rgba(128, 128, 128, 0.075);
+    background: #6CC049;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
     box-sizing: content-box;
     position: relative;
     outline: none;
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: Helvetica;
 }
 
 .tabs:not(:last-child) {
@@ -98,6 +111,10 @@ code {
 .active-tabs {
     background: white;
     border-bottom: 1px solid transparent;
+    color: #d41d75;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Helvetica;
 }
 
 .active-tabs::before {
@@ -109,10 +126,10 @@ code {
     transform: translateX(-50%);
     width: calc(100% + 2px);
     height: 5px;
-    background: rgb(88, 147, 241);
+    background: #FE5000;
 }
 
-button {
+#button-display {
     border: none;
 }
 
@@ -142,8 +159,20 @@ button {
 .content p {
     width: 100%;
     height: 100%;
+    font-family: Helvetica;
+    font-size: 15px;
 }
 
 .active-content {
     display: block;
+}
+
+.extra-info {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.competencias {
+    color: #d41d75;
 }

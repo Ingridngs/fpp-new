@@ -13,37 +13,39 @@ export const EvCompetenciasDirectivo = () => {
                     <div>
                     <div  key={ key }>
                       <div>
-                          <h3>{ data.competencia }</h3>
+                          <h3 className='competencias'>{ data.competencia }</h3>
                       </div>
                       <hr />
                      <div>
-                        <p>
+                       <strong>
+                            <p>
                           { data.definicion }
                         </p>
+                       </strong>
                       </div>
                        <div className='question'>
                         <div>
-                          <strong>
-                              <p>{ data.preguntas.one }</p>
-                          </strong>
+                          
+                              <p>🌟{ data.preguntas.one }</p>
+                         
                         </div>
                         <div>
                               <DropDownAswer/>
                         </div>
                            <br />
                         <div>
-                          <strong>
+                         
                               <p>{ data.preguntas.two }</p>
-                          </strong>
+                         
                         </div>
                         <div>
                               <DropDownAswer/>
                         </div>
                            <br />
                         <div>
-                          <strong>
+                          
                               <p>{ data.preguntas.three}</p>
-                          </strong>
+                         
                            <div>
                               <DropDownAswer/>
                         </div>
@@ -60,7 +62,7 @@ export const EvCompetenciasDirectivo = () => {
                   )
             }
                
-            <button className='btn-primary'>Enviar </button>
+            <button className='new-theme'>Enviar </button>
                 
             </div>
             </>

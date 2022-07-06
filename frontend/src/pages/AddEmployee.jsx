@@ -6,7 +6,6 @@ export const AddEmployee = () => {
   return (
     <div>
         <EmployeeForm/>
-        <DisplayEmployees/>
     </div>
   )
 }

@@ -4,6 +4,8 @@ import { useEmployeesContext } from '../hooks/useEmployeesContext'
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import formatWithOptions from 'date-fns/fp/formatWithOptions'
 import {es} from 'date-fns/locale'
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export const DisplayEmployees = () => {
@@ -38,7 +40,7 @@ const { employees,dispatch} = useEmployeesContext()
       }
 
   return (
-    <div class="table-responsive container">
+    <div class=" main table-responsive ">
        <table class="table table-hover ">
       <thead>
        <tr>
@@ -49,8 +51,8 @@ const { employees,dispatch} = useEmployeesContext()
           <th scope="col">Nivel</th>
           <th scope="col">Area</th>
           <th scope="col">Oficina</th>
-          <th scope="col">Fecha Nacimiento</th>
           <th scope="col">Antigüedad </th>
+          <th scope="col">Email</th>
         </tr>
       </thead>
       <tbody>
@@ -66,9 +68,9 @@ const { employees,dispatch} = useEmployeesContext()
                     <td>{employee.level}</td>
                     <td>{employee.area}</td>
                     <td>{employee.office}</td>
-                    <td>{employee.birthday }</td>
                     <td>{formatDistanceToNow(new Date(employee.entryDate))}</td>
-                    <td onClick={ handleClick }>Delete</td>
+                    <td>{employee.email }</td>
+                    <td onClick={ handleClick }><FontAwesomeIcon icon={faTrashCan} /></td>
                   </tr>
                 </>
               ))

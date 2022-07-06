@@ -23,19 +23,22 @@ const DisplayEvaluacion = () => {
       <>
         <div className="main-tabs">
             <div className="bloc-tabs">
-                    <button
+                    <button 
+                    id='button-display'
                     className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                     onClick={() => toggleTab(1)}
                     >
                     Competencias
                     </button>
                     <button
+                    id='button-display'
                     className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
                     onClick={() => toggleTab(2)}
                     >
-                    Intrucciones
+                   Instrucciones
                     </button>
                     <button
+                    id='button-display'
                     className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
                     onClick={() => toggleTab(3)}
                     >
@@ -54,37 +57,44 @@ const DisplayEvaluacion = () => {
                     Son cualidades del colaborador, por lo tanto son observables, cuantificables, medibles y diferencian a una persona de otras.
                 </div>
             <br/>
-            <div>
-                <button  className='btn btn-primary'>Ir a Canva</button>
-            </div>
+                <div>
+                    Si necesitas más información sobre las competencias a evaluar puedes visitar los siguientes recursos que tenemos disponibles para ti.
+                </div>
             <br/>
-            <div>
-                <button  className='btn btn-primary'>Descargar Catálogo</button>
+            <div  className='extra-info'>
+                  <div>
+                    <button  className=' new-theme'>Ir a Canva</button>
+                  </div>
+            <br/>
+                    <div>
+                        <button  className=' new-theme '>Descargar <br/> Catálogo</button>
+                    </div>
             </div>
             </p>
             </div>
 
             <div
             className={toggleState === 2 ? "content  active-content" : "content"}
+             id='preguntas'
             >
             <h2>Instrucciones</h2>
             <hr />
             
             <p>
-                En esta sección se presentan las conductas esperadas para el colaborador según la posición que ocupa actualmente.
+                En la siguiente sección  se presentan las conductas esperadas para el colaborador según la posición que ocupa actualmente.
     Lea cada enunciado y reflexione acerca de circunstancias o situaciones en el trabajo en las cuales evidenció la conducta descrita (durante la ejecución de su trabajo, en algún proyecto específico, en situaciones críticas, situaciones con el cliente, con sus compañeros de trabajo, con sus jefes, con personas de otras áreas / gerencias, etc.).
             <br/>
             <br/>
             Calificación:
             <br/>
-            <strong>-No muestra : </strong>Estos comportamientos no se demuestran en el nivel del rol o se demuestran tan rara vez que se los considera inusuales.
+            <strong>No muestra : </strong>Estos comportamientos no se demuestran en el nivel del rol o se demuestran tan rara vez que se los considera inusuales.
             <br/>
-            <strong>-En desarrollo :  </strong> Demuestra algunos de estos comportamientos o los demuestra inconsistentemente. Es probable que las personas nuevas en el rol estén en este estado.
+            <strong>En desarrollo :  </strong> Demuestra algunos de estos comportamientos o los demuestra inconsistentemente. Es probable que las personas nuevas en el rol estén en este estado.
         
             <br/>
-            <strong>-Competente : </strong> Demuestra constantemente los comportamientos deseados.
+            <strong>Competente : </strong> Demuestra constantemente los comportamientos deseados.
                 <br/>
-            <strong>-Modelo a seguir :</strong> Actúa consistentemente como un ejemplo para los demás demostrando estos comportamientos
+            <strong>Modelo a seguir :</strong> Actúa consistentemente como un ejemplo para los demás demostrando estos comportamientos
                 </p>
             </div>
 

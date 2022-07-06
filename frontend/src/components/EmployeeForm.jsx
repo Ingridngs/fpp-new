@@ -53,6 +53,7 @@ export const EmployeeForm = () => {
             setEmptyFields([])
             console.log("new employee added ")
             alert('Información guardada exitosamente 👌')
+            navigate('/team')
            
             dispatch({ type: 'CREATE_EMPLOYEE' , payload: json})
         }
@@ -60,7 +61,7 @@ export const EmployeeForm = () => {
     
 
   return (
-      <div  className=' container form-group   px-4 '>
+      <div  className=' main form-group   px-4 '>
             <form className="create"   onSubmit={ handleSubmit }>
                 <div className="form-row">
                     <div className="col-md-6 b-5  mt-5  __in">
@@ -168,7 +169,7 @@ export const EmployeeForm = () => {
                    </div>
                 </div>
                 <div>
-                    <button  type='submit' className='btn btn-primary btn-background bt_in'>Add</button>   
+                    <button  type='submit' className=' new-theme ' id='btn-form'>Add</button>   
                 </div>
                 
             </form>
